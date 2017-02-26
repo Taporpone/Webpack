@@ -1,9 +1,9 @@
 //webpack.config.js
-
+var path
 module.exports = {
   entry: './src/containers/App.js',
   output: {
-    path: './build',
+    path: __dirname + '/build',
     filename: 'app.bundle.js'
   },
   module: {
