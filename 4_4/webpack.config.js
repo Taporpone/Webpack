@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './src/containers/app.js',
+  entry: './src/index.js',
   output: {
     path:'./build',
     filename:'app.bundle.js'
@@ -8,7 +8,8 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        loader:"babel-loader"
+        loader:"babel-loader",
+        exclude: /node_modules/
       },
       {
         test: /\.css$/,

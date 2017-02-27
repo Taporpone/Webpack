@@ -1,6 +1,7 @@
 import React from 'react';
 import uuid from 'uuid';
-import style from './App.css';
+import style from './app.css';
+import Title from '../components/Title.js'
 
 class App extends React.Component {
   constructor(props){
@@ -23,8 +24,10 @@ class App extends React.Component {
   }
   render(){
     return (
-      <div className="style.TodoApp">
-        <p>A</p>
+      <div className={style.TodoApp}>
+      <div className={style.Title}>
+      <Title todos={this.state.data}/>
+      </div>
       </div>
     );
   }
