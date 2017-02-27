@@ -9526,9 +9526,9 @@ var _uuid = __webpack_require__(185);
 
 var _uuid2 = _interopRequireDefault(_uuid);
 
-var _app = __webpack_require__(184);
+var _App = __webpack_require__(184);
 
-var _app2 = _interopRequireDefault(_app);
+var _App2 = _interopRequireDefault(_App);
 
 var _Title = __webpack_require__(84);
 
@@ -9581,10 +9581,10 @@ var App = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: _app2.default.TodoApp },
+        { className: _App2.default.TodoApp },
         _react2.default.createElement(
           'div',
-          { className: _app2.default.Title },
+          { className: _App2.default.Title },
           _react2.default.createElement(_Title2.default, { todos: this.state.data })
         )
       );
@@ -9641,9 +9641,6 @@ var Title = function (_React$Component) {
   }
 
   _createClass(Title, [{
-    key: 'printer',
-    value: function printer() {}
-  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -9702,12 +9699,12 @@ exports = module.exports = __webpack_require__(86)();
 
 
 // module
-exports.push([module.i, "._3MkkhWLRKYQub1SHSW16rk {\r\n    background-color: #F5F5F5;\r\n    color: #222;\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    justify-content: center;\r\n    align-items: center;\r\n    align-content: center;\r\n    width: 100vw;\r\n    height: 100vh;\r\n}\r\n\r\n._3tEpnJj3vKlD23HzxVPFya h1 {\r\n  color: red;\r\n  font-size: 30px;\r\n}\r\n\r\n._3tEpnJj3vKlD23HzxVPFya p {\r\n  font-style: italic;\r\n  font-size: 25px;\r\n}\r\n", ""]);
+exports.push([module.i, "._1yWMblMhcoxIcFRQVWQUoB {\r\n    background-color: #F5F5F5;\r\n    color: #222;\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    justify-content: center;\r\n    align-items: center;\r\n    align-content: center;\r\n    width: 100vw;\r\n    height: 100vh;\r\n}\r\n\r\n._2vrzew4qD79w9CFTT9Fk8A h1 {\r\n  color: red;\r\n  font-size: 30px;\r\n}\r\n\r\n._2vrzew4qD79w9CFTT9Fk8A p {\r\n  font-style: italic;\r\n  font-size: 25px;\r\n}\r\n", ""]);
 
 // exports
 exports.locals = {
-	"TodoApp": "_3MkkhWLRKYQub1SHSW16rk",
-	"Title": "_3tEpnJj3vKlD23HzxVPFya"
+	"TodoApp": "_1yWMblMhcoxIcFRQVWQUoB",
+	"Title": "_2vrzew4qD79w9CFTT9Fk8A"
 };
 
 /***/ }),
@@ -22264,8 +22261,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js??ref--1-1!./app.css", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js??ref--1-1!./app.css");
+		module.hot.accept("!!../../node_modules/css-loader/index.js??ref--1-1!./App.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js??ref--1-1!./App.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
