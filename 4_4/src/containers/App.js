@@ -1,6 +1,6 @@
 import React from 'react';
-import uuid from 'uuid'
-import style from './App.css'
+import uuid from 'uuid';
+import style from './App.css';
 
 class App extends React.Component {
   constructor(props){
@@ -14,19 +14,19 @@ class App extends React.Component {
       text: val,
       id: uuid.v4(),
     };
-    const data = [...this.state.data, todo];
+    const data = [...this.state.data,todo];
     this.setState({data});
   }
-  removeTodo(id) {
+  removeTodo(id){
     const remainder = this.state.data.filter(todo => todo.id !== id);
     this.setState({data:remainder});
   }
   render(){
     return (
       <div className="style.TodoApp">
-        Empty.for now.
+        <p>A</p>
       </div>
-    )
+    );
   }
 }
 

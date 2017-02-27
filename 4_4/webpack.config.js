@@ -1,28 +1,25 @@
-//webpack.config.js
-var path
 module.exports = {
-  entry: './src/containers/App.js',
+  entry: './src/containers/app.js',
   output: {
-    path: __dirname + '/build',
-    filename: 'app.bundle.js'
+    path:'./build',
+    filename:'app.bundle.js'
   },
   module: {
     rules: [
       {
         test: /\.js$/,
-        loader: "babel-loader"
+        loader:"babel-loader"
       },
       {
         test: /\.css$/,
         use: [
-            {loader: 'style-loader'},
-            {
-              loader: 'css-loader',
-              options: {
-                modules:true
-              }
+          {loader: 'style-loader'},
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true
+            }
           }
-
         ]
       }
     ]

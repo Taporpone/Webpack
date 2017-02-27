@@ -4512,11 +4512,11 @@ exports = module.exports = __webpack_require__(23)();
 
 
 // module
-exports.push([module.i, "._2xo2biYT1s9XQmHhT2Utv5 {\n    background-color: #F5F5F5;\n    color: #222;\n    display: flex;\n    flex-direction: column;\n    flex-wrap: nowrap;\n    justify-content: center;\n    align-items: center;\n    align-content: center;\n    width: 100vw;\n    height: 100vh;\n}\n", ""]);
+exports.push([module.i, "._1yWMblMhcoxIcFRQVWQUoB {\r\n    background-color: #F5F5F5;\r\n    color: #222;\r\n    display: flex;\r\n    flex-direction: column;\r\n    flex-wrap: nowrap;\r\n    justify-content: center;\r\n    align-items: center;\r\n    align-content: center;\r\n    width: 100vw;\r\n    height: 100vh;\r\n}\r\n", ""]);
 
 // exports
 exports.locals = {
-	"TodoApp": "_2xo2biYT1s9XQmHhT2Utv5"
+	"TodoApp": "_1yWMblMhcoxIcFRQVWQUoB"
 };
 
 /***/ }),
@@ -4536,7 +4536,7 @@ var stylesInDom = {},
 		};
 	},
 	isOldIE = memoize(function() {
-		return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
+		return /msie [6-9]\b/.test(self.navigator.userAgent.toLowerCase());
 	}),
 	getHeadElement = memoize(function () {
 		return document.head || document.getElementsByTagName("head")[0];
@@ -4844,7 +4844,11 @@ var App = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'style.TodoApp' },
-        'Empty.for now.'
+        _react2.default.createElement(
+          'p',
+          null,
+          'A'
+        )
       );
     }
   }]);
