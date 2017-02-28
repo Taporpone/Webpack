@@ -1,6 +1,10 @@
 
 # Created by https://www.gitignore.io/api/windows,macos,emacs,node
 
+### @Taporpone | WebPack ###
+build/ 
+
+
 ### Emacs ###
 # -*- mode: gitignore; -*-
 *~
