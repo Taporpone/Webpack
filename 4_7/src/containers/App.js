@@ -21,10 +21,12 @@ class App extends React.Component {
         id: 3,
         text:'idk, an hero?'
       }
-    ]
+    ],
+    todoValue: ''
   };
   this.removeTodo = this.removeTodo.bind(this);
   this.addTodo = this.addTodo.bind(this);
+  this.onTodoValueChange = this.onTodoValueChange.bind(this);
 }
 addTodo(val){
   const todo = {
@@ -38,6 +40,13 @@ removeTodo(id){
   const remainder = this.state.data.filter(todo => todo.id !== id);
   this.setState({data:remainder});
 }
+onTodoValueChange(event){
+  const {value} = event.target;
+  this.setState({
+    todoValue: value
+  });
+}
+
 render(){
   return (
     <div className={style.TodoApp}>
@@ -45,10 +54,16 @@ render(){
         <Title todos={this.state.data} />
       </div>
       <div className={style.TodoForm}>
-        <TodoForm onChange={this.addTodo} />
+        <TodoForm
+          onSubmit={this.addTodo}
+          todoValue={this.state.todoValue}
+          onChange ={this.onTodoValueChange}
+        />
       </div>
       <div className={style.TodoList}>
-        <TodoList items={this.state.data} onClick={this.removeTodo}/>
+        <TodoList items={this.state.data}
+          onClick={this.removeTodo}
+        />
       </div>
     </div>
   );

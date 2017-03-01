@@ -1,9 +1,10 @@
 import React from 'react';
+import Todo from './Todo.js'
 
-const TodoList = ({items,onClick}) => (
+const TodoList = (props) => (
   <ul>
-    {items.map(item => (
-      <li key={item.id} onClick={() => {onClick(item.id)}}>{item.text}</li>
+    {props.items.map(item => (
+      <Todo item={item} onClick={() => {props.onClick(item.id)}} />
     ))}
   </ul>
 )
