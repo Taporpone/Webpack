@@ -4,7 +4,7 @@ import Todo from './Todo.js'
 const TodoList = (props) => (
   <ul>
     {props.items.map(item => (
-      <Todo item={item} onClick={() => {props.onClick(item.id)}} />
+      <Todo key = {item.id} item={item} onClick={() => {props.onClick(item.id)}} />
     ))}
   </ul>
 )
