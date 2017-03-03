@@ -9,9 +9,9 @@ const TodoForm = (props) => {
     <form onSubmit={handleSubmit}>
       <label>
         I need to do
-        <input type={'text'} value={props.todoValue} onChange={props.onChange}/>
+        <input type='text' value={props.todoValue} onChange={props.onChange}/>
       </label>
-      <input type={'submit'} value={'Add!'} />
+      <input type='submit' value='Add!' />
     </form>
   );
 }
